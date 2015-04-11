@@ -1,0 +1,41 @@
+sqlite3 sweets.db ".import company.dat Company" とか
+
+問題1
+SELECT * FROM Sweets WHERE CompanyID = 2;
+2|おっとっと|140|120|2
+5|チョコボール|95|145|2
+
+問題2
+SELECT Sweets.Name,Company.Name FROM Sweets,Company WHERE Sweets.CompanyID = Company.ID;
+ポテトチップス|カルビー
+おっとっと|森永
+じゃがりこ|カルビー
+かっぱえびせん|カルビー
+チョコボール|森永
+ミルクチョコレート|明治
+キシリッシュ|明治
+
+問題3
+SELECT Name,Max(Calorie) FROM Sweets;
+ポテトチップス|554
+SELECT Name,Min(Calorie) FROM Sweets;
+キシリッシュ|30
+
+問題4
+SELECT Sweets.Name,Sum(Price*Quantity) FROM Sweets, Sales WHERE Sweets.ID = Sales.SweetsID GROUP BY SweetsID;
+ポテトチップス|17400
+おっとっと|9100
+じゃがりこ|18850
+かっぱえびせん|10800
+チョコボール|10925
+ミルクチョコレート|10350
+キシリッシュ|12000
+
+問題5
+SELECT Sweets.Name,MAX(Price*Quantity) FROM Sweets, Sales WHERE Sweets.ID = Sales.SweetsID AND Month=1;
+ポテトチップス|12000
+
+問題6
+各お菓子の1,2月合計売上で一番高いお菓子名と売上を表示するSQLを書け。
+SELECT Sweets.Name,Max(SumSales) FROM (SELECT Sweets.Name,Sum(Price*Quantity) as SumSales FROM Sweets, Sales WHERE Sweets.ID = Sales.SweetsID GROUP BY Sweets.ID);
+じゃがりこ|18850
