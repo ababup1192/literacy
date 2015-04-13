@@ -4,7 +4,7 @@
 最新資料ダウンロード
 リテラシーI 中間対策 
   
-  https://github.com/ababup1192/literacy/releases/download/1.0/literacyI-midterm.pdf
+  https://github.com/ababup1192/literacy/releases/download/v2.0/literacyI-midterm.pdf.zip
 
 リテラシーII データベース対策
   
