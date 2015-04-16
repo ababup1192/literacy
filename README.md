@@ -4,7 +4,7 @@
 最新資料ダウンロード
 リテラシーI 1~10章まとめ
   
-  https://github.com/ababup1192/literacy/releases/download/2.1/literacyI-midterm.pdf
+  https://github.com/ababup1192/literacy/releases/download/2.2/literacyI-1to10.pdf
 
 リテラシーII データベース対策
   
