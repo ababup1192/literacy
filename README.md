@@ -1,8 +1,8 @@
-# リテラシーI・II 対策資料
-会津大 リテラシーI II のテスト対策資料など。
+# リテラシーI・II 補足資料
+会津大 リテラシーI II の補足資料
 
 最新資料ダウンロード
-リテラシーI 中間対策 
+リテラシーI 1~10章まとめ
   
   https://github.com/ababup1192/literacy/releases/download/2.1/literacyI-midterm.pdf
 
